@@ -13,7 +13,13 @@ Estes Clientes devem ser configurados para usar o mesmo  servidor de authentica�
 
 Neste caso foi usado o [Aws Cognito](https://aws.amazon.com/pt/cognito/).
 
-##### Necessário configurar o **ClientId**, o **ClientSecret** e a **urls** do 'Cognito Pool' nos arquivos:
+#### Setup
+
+##### Na sessão **"Login Pages"** do **App Client**  adicionar as **"Allowed callback URLs"** :
+
+* http://localhost:8080/authorize/oauth2/code/cognito   (p/ OAuth2 Client )
+
+##### Necessário configurar o **"ClientId"**, o **"ClientSecret"** e a **"urls"** do "Cognito Pool" nos arquivos:
 * /src/main/resources/application.properties
 * /src/main/resources/static/secret.js
 
