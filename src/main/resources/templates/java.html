@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="pt-br">
+      
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Java </title> 
+</head>
+
+
+<body>
+  
+  <h2>Exemplo Java </h2>
+
+  
+  <a href="/java">Back</a>
+
+  <p>
+  
+  <form   th:action="@{/java}"  method="post" >
+      <input type="submit"   value="Consultar" />                                 
+  </form>  
+  <br>
+  
+  <p style="color: red ;" th:text="${error}"></p>
+  
+  <h4>Authorization Code</h4>
+  <pre th:text="${code}">>  </pre>
+
+  <br>
+  
+  <h4>Accesss Token</h4>
+  <pre th:text="${token}">>  </pre>
+  
+  <br>
+  
+  <h4>Resultado</h4>
+  <pre><code id="json" class="json" th:text="${resultado}"></code></pre>
+	
+  <script>
+    json.innerHTML = JSON.stringify(JSON.parse(json.innerHTML), null, 4);
+  </script>
+	      
+</body>
+</html>

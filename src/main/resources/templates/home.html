@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="pt-br">
+      
+<head>
+    <meta charset="UTF-8">
+	<title>Exemplos</title>
+</head>
+
+<body>
+
+<h1>Exemplos</h1>
+<h3>Aplicações Clientes da API de Usuários com abordagens distintas (Fluxo OAuth2 Authorization Code)</h3>
+<ul>
+	<li><a th:href="@{/js/index.html}">JavaScript</a> - Acesso à API usando somente um cliete JavaScript</li>
+	<li><a th:href="@{/pkce/index.html}">JavaScript com PKCE</a> - Acesso à API usando somente um cliete JavaScript e PKCCE</li>
+	<li><a th:href="@{/java}">Java </a> - Acesso à API sem usar os recursos do Spring Oauth2 Client</li>
+	<li><a th:href="@{/oauth2}">Spring Oauth2 Client </a> - Acesso à API via Spring Oauth2 Client</li>
+</ul>
+
+</body>
+</html>
