@@ -7,7 +7,7 @@
 * **JavaScript** com fluxo "Authorization Code Grant" **sem** PKCE
 * **JavaScript** com fluxo "Authorization Code Grant" **com** PKCE
 * **Java** com fluxo "Authorization Code Grant" sem PKCE (e sem usar os recursos do Spring Oauth2 Client)
-* **Spring** Oauth2 Client com fluxo "Authorization Code Grant" .
+* **Spring Oauth2 Client** com fluxo "Authorization Code Grant" .
 
 Estes Clientes devem ser configurados para usar o mesmo  servidor de authenticação da aplicação [server](https://github.com/clmsvr/user-access-template-oidc-apiserver).
 
